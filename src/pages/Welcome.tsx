@@ -1,18 +1,18 @@
-
 import React from 'react';
 import Logo from '../components/Logo';
 import Breadcrumb from '../components/Breadcrumb';
 import EmailButton from '../components/EmailButton';
-
 const Welcome: React.FC = () => {
-  const breadcrumbItems = [
-    { label: 'The Rundown AI', path: '/' },
-    { label: 'Pages', path: '/pages' },
-    { label: 'Welcome' },
-  ];
-
-  return (
-    <div className="min-h-screen bg-white">
+  const breadcrumbItems = [{
+    label: 'The Rundown AI',
+    path: '/'
+  }, {
+    label: 'Pages',
+    path: '/pages'
+  }, {
+    label: 'Welcome'
+  }];
+  return <div className="min-h-screen bg-white">
       <div className="max-w-3xl mx-auto px-4 py-8">
         <Breadcrumb items={breadcrumbItems} />
         
@@ -21,9 +21,7 @@ const Welcome: React.FC = () => {
         </div>
         
         <div className="text-center mb-10">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">
-            Welcome to The Rundown AI 🧠
-          </h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">Welcome to The Rundown AI </h1>
           <p className="text-lg font-medium">You're officially an early adopter!</p>
         </div>
         
@@ -76,8 +74,6 @@ const Welcome: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Welcome;
